@@ -1,3 +1,152 @@
+/* KEYFRAMES */
+@keyframes rotation {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 90deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotation75 {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 90deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes translatepos {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(83%);
+    }
+
+    50% {
+        transform: translateX(166%);
+    }
+
+    75% {
+        transform: translateX(83%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateneg {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    75% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes tour360bottom {
+    0% {
+        bottom: -10px;
+        right: 20%;
+    }
+
+    15% {
+        bottom: -10px;
+        right: 80%;
+    }
+
+    45% {
+        bottom: 50px;
+        right: 80%;
+    }
+
+    65% {
+        bottom: 50px;
+        right: -10%;
+        background-image: url(img/duck.png);
+        background-size: contain;
+    }
+    
+    95% {
+        bottom: -10px;
+        right: -10%;
+    }
+}
+
+@keyframes tour360top {
+    0% {
+        top: -10px;
+        left: 10%;
+    }
+
+    15% {
+        top: -10px;
+        left: 80%;
+    }
+
+    45% {
+        top: 60px;
+        left: 80%;
+    }
+
+    65% {
+        top: 60px;
+        left: -10%;
+        background-image: url(img/duck.png);
+        background-size: contain;   
+    }
+    
+    95% {
+        top: -10px;
+        left: -10%;   
+    }
+}
+
+
+/* MAIN */
 .ex-1-square {
     width: 100px;
     height: 100px;
@@ -94,95 +243,6 @@
     animation-iteration-count: infinite;
 }
 
-/* KEYFRAMES */
-@keyframes rotation {
-    0% {
-        rotate: 0deg;
-    }
-
-    25% {
-        rotate: 90deg;
-    }
-
-    50% {
-        rotate: 180deg;
-    }
-
-    75% {
-        rotate: 270deg;
-    }
-
-    100% {
-        rotate: 360deg;
-    }
-}
-
-@keyframes rotation75 {
-    0% {
-        rotate: 0deg;
-    }
-
-    25% {
-        rotate: 90deg;
-    }
-
-    50% {
-        rotate: 180deg;
-    }
-
-    75% {
-        rotate: 270deg;
-    }
-
-    100% {
-        rotate: 0deg;
-    }
-}
-
-@keyframes translatepos {
-    0% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(83%);
-    }
-
-    50% {
-        transform: translateX(166%);
-    }
-
-    75% {
-        transform: translateX(83%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@keyframes translateneg {
-    0% {
-        transform: translateX(0);
-    }
-
-    25% {
-        transform: translateX(-50%);
-    }
-
-    50% {
-        transform: translateX(-100%);
-    }
-
-    75% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 .ex-11-icon {
     font-size: 60px;
 }
@@ -238,3 +298,18 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
+.ex-13-top-white {
+    animation-name: tour360top;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-13-bottom-white {
+    animation-name: tour360bottom;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
