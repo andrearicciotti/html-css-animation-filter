@@ -94,6 +94,7 @@
     animation-iteration-count: infinite;
 }
 
+/* KEYFRAMES */
 @keyframes rotation {
     0% {
         rotate: 0deg;
@@ -116,9 +117,83 @@
     }
 }
 
+@keyframes rotation75 {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 90deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    100% {
+        rotate: 0deg;
+    }
+}
+
+@keyframes translatepos {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(83%);
+    }
+
+    50% {
+        transform: translateX(166%);
+    }
+
+    75% {
+        transform: translateX(83%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes translateneg {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-50%);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    75% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: rotation75;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -139,6 +214,7 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+    transition: transform 2s linear;
 }
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
@@ -147,4 +223,18 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-top-white {
+    animation-name: translatepos;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.ex-12-bottom-white {
+    animation-name: translateneg;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
