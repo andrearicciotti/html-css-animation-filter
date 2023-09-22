@@ -75,16 +75,47 @@
 .ex-8-img {
     filter: hue-rotate(90deg);
     filter: invert(9);
-    border-radius: 20px 20px 20px 20px;
+    border-radius: 20px;
 }
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    filter: saturate(3);
+    box-shadow: 10px 5px 5px red;
+    border-radius: 30px;
 }
+
 .ex-10-icon {
-    font-size: 60px;
+    font-size: 60px; 
+    animation-name: rotation;
+    animation-duration: 1.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes rotation {
+    0% {
+        rotate: 0deg;
+    }
+
+    25% {
+        rotate: 90deg;
+    }
+
+    50% {
+        rotate: 180deg;
+    }
+
+    75% {
+        rotate: 270deg;
+    }
+
+    100% {
+        rotate: 360deg;
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
